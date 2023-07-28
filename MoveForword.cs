@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class MoveForword : MonoBehaviour
 {
+public int speed;
     // Start is called before the first frame update
     void Start()
     {
@@ -13,6 +14,6 @@ public class MoveForword : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+       transform.Translate(Vector3.forward * speed * Time.deltaTime);
     }
 }
